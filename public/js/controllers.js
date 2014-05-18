@@ -5,21 +5,25 @@
 angular.module('bgdraw.controllers', [])
     .controller('WelcomeCtl', ['$scope', '$cookies','Socket', function($scope, $cookies, socket) {
         if($cookies.name){
-            document.location = '#home';
+            document.location = '#draw';
             return;
         }
         $scope.colors = ['#ff0000', '#00ff00', '#0000ff', '#fff', '#aaa'];
         $scope.enter = function(){
 
             $cookies.name = $scope.name;
-            $cookies.color = $scope.colors[Math.floor(Math.random()  * $scope.colors.lenth)]
-            document.location = '#home';
+            $cookies.color = $scope.colors[Math.floor(Math.random()  * $scope.colors.length)]
+            socket.emit('guess', {
+                name: $cookies.name,
+                guess: $scope.guess
+            });
+            document.location = '#draw';
         }
 
     }])
     .controller('HomeCtl', ['$scope', '$cookies', 'Socket', function($scope, $cookies, socket) {
         if(!$cookies.name){
-            return document.location = '#welcome';
+            return document.location = '#draw';
         }
         $scope.send_guess = function(){
             socket.emit('guess', {
@@ -75,10 +79,13 @@ angular.module('bgdraw.controllers', [])
         socket.on('clear', $scope.draw)
 
         // Bind click and drag events to drawing and sockets.
-        $scope.canvas = $('canvas');
+        var jCanvasParent = $('#canvas_parent');
+        jCanvasParent.height($(window).height());
+        $scope.canvas = $('<canvas width="' + jCanvasParent.width() + '" height="' + jCanvasParent.height() + '"  style="margin: 0 auto; width:100%; height:100%;"></canvas>');
+        jCanvasParent.append($scope.canvas);
         $scope.ctx = $('canvas')[0].getContext("2d");
 
-            $('canvas').on('drag dragstart dragend', function(e) {
+        $scope.canvas.on('drag dragstart dragend', function(e) {
                 e.preventDefault();
                 var offset = $(this).offset()
                 var data = {
