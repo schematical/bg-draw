@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11db1367-3e0d-4217-af80-7a1818405ffe" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers.js" afterPath="$PROJECT_DIR$/public/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/draw.html" afterPath="$PROJECT_DIR$/public/partials/draw.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -31,9 +32,9 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="44" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.5084746" vertical-offset="1302" max-vertical-offset="1890">
+            <state line="115" column="42" selection-start="4072" selection-end="4072" vertical-scroll-proportion="0.6513317" vertical-offset="1801" max-vertical-offset="2250">
               <folding>
-                <marker date="1400455392598" expanded="true" signature="2937:2977" placeholder="..." />
+                <marker date="1400456480738" expanded="true" signature="3494:3534" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -43,15 +44,6 @@
         <entry file="file://$PROJECT_DIR$/public/templates/_meta.hjs">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="42" selection-start="1037" selection-end="1037" vertical-scroll-proportion="-3.3333333" vertical-offset="378" max-vertical-offset="972">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="41" selection-start="1009" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
@@ -67,9 +59,9 @@
         </entry>
       </file>
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="96" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+            <state line="42" column="40" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -78,9 +70,10 @@
       <file leaf-file-name="draw.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/draw.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="756">
+            <state line="3" column="21" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="756">
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,15 +115,15 @@
         <option value="$PROJECT_DIR$/public/js/services.js" />
         <option value="$PROJECT_DIR$/public/partials/home.html" />
         <option value="$PROJECT_DIR$/public/partials/welcome.html" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/partials/draw.html" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/js/controllers.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1301" />
+    <option name="x" value="65" />
     <option name="y" value="764" />
     <option name="width" value="1301" />
     <option name="height" value="772" />
@@ -366,7 +359,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1301" y="764" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="764" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -483,6 +476,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/dispaly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="57" selection-end="57" vertical-scroll-proportion="0.18045112" vertical-offset="0" max-vertical-offset="399">
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/_meta.hjs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="42" selection-start="1037" selection-end="1037" vertical-scroll-proportion="-3.3333333" vertical-offset="378" max-vertical-offset="972">
@@ -490,9 +492,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="41" selection-start="1009" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="864">
+        <state line="18" column="96" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="67" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
@@ -504,43 +513,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/dispaly.html">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="57" selection-end="57" vertical-scroll-proportion="0.18045112" vertical-offset="0" max-vertical-offset="399">
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="67" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="42" column="40" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/draw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="756">
+        <state line="3" column="21" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="756">
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="96" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="44" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.5084746" vertical-offset="1302" max-vertical-offset="1890">
+        <state line="115" column="42" selection-start="4072" selection-end="4072" vertical-scroll-proportion="0.6513317" vertical-offset="1801" max-vertical-offset="2250">
           <folding>
-            <marker date="1400455392598" expanded="true" signature="2937:2977" placeholder="..." />
+            <marker date="1400456480738" expanded="true" signature="3494:3534" placeholder="..." />
           </folding>
         </state>
       </provider>

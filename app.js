@@ -37,7 +37,11 @@ app.start(function(err, _app, server){
             if(!app.users[data.name]){
                 app.users[data.name] = data;
             }
-            socket.broadcast.emit('joined', data)
+            console.log("Joined: " + data.name);
+
+            socket.broadcast.emit('joined', {
+                users:_.clone(app.users)
+            })
         });
     });
 });

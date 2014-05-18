@@ -13,9 +13,9 @@ angular.module('bgdraw.controllers', [])
 
             $cookies.name = $scope.name;
             $cookies.color = $scope.colors[Math.floor(Math.random()  * $scope.colors.length)]
-            socket.emit('guess', {
+            socket.emit('join', {
                 name: $cookies.name,
-                guess: $scope.guess
+                color: $cookies.color
             });
             document.location = '#draw';
         }
@@ -45,13 +45,26 @@ angular.module('bgdraw.controllers', [])
 
     }])
     .controller('DrawCtl', ['$scope', '$cookies', 'Socket', function($scope, $cookies, socket) {
+        $scope.users = {};
         if(!$cookies.name){
             return document.location = '#welcome';
+        }else{
+            var user =  {
+                name: $cookies.name,
+                color: $cookies.color
+            };
+            $scope.users[user.name] = user;
+            socket.emit('join', user);
         }
-        $scope.users = {};
+
+
         document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
         // Draw Function
         $scope.draw = function(data) {
+            if(data.name && !$scope.users[data.name]){
+                $scope.users[data.name] = data;
+                $scope.$apply();
+            }
             $scope.ctx.strokeStyle = data.color;
             if (data.type == "dragstart") {
                 $scope.ctx.beginPath()
@@ -69,14 +82,20 @@ angular.module('bgdraw.controllers', [])
             $scope.ctx.clearRect(0, 0, $scope.canvas.width, $scope.canvas.height);
         }
         $scope.joined = function(data) {
-            if(!$scope.users[data.name]){
-                $scope.users[data.name] = data;
+            if(data.users){
+                $scope.users = data.users;
+            }else{
+                if(!$scope.users[data.name]){
+                    $scope.users[data.name] = data;
+                }
             }
+            $scope.$apply();
         }
 
         // Draw from other sockets
         socket.on('draw', $scope.draw);
-        socket.on('clear', $scope.draw)
+        socket.on('clear', $scope.draw);
+        socket.on('joined', $scope.joined);
 
         // Bind click and drag events to drawing and sockets.
         var jCanvasParent = $('#canvas_parent');
@@ -94,6 +113,7 @@ angular.module('bgdraw.controllers', [])
                     type: e.handleObj.type
                 }
                 data.color = $cookies.color;
+                data.name = $cookies.name;
                 $scope.draw(data) // Draw yourself.
                 socket.emit('drawClick', data) // Broadcast draw.
             })
