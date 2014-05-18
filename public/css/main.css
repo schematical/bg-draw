@@ -1,0 +1,13 @@
+body{
+    background-color: #333;
+    color:white;
+}
+.img-thumb{
+    width:100%;
+    opacity: .5;
+    -webkit-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+.img-thumb:hover{
+    opacity: 1;
+}

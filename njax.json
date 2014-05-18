@@ -1,0 +1,22 @@
+{
+    "app_name":"Photo Booth",
+    "frameworks":{
+    },
+    "models":{
+
+
+    },
+    "bowser":{
+        "dependencies":{
+            "fontawesome":"*"
+        }
+    },
+    "package":{
+        "dependencies":{
+            "gm":"*",
+            "mkdirp":"*",
+            "postmark":"*",
+            "hogan.js":"*"
+        }
+    }
+}

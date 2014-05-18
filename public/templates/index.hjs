@@ -1,0 +1,6 @@
+{{> _header }}
+<data ng-view>
+
+</data>
+
+{{> _footer }}

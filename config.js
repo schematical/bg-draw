@@ -1,0 +1,19 @@
+module.exports = {
+    app_dir: __dirname,
+    cache_dir: __dirname + '/_test',
+    port:3030,
+    aws:{
+        accessKeyId:'AKIAIEZU7R2766G7GTMQ',
+        secretAccessKey:'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',
+        bucket_name:'byobob',
+        associateId:'holiday_helper-20'
+    },
+    postmark:{
+        api_key:'7510dc07-9252-11e3-a73b-0025909414ec',
+        from_address:'mlea@schematical.com'
+    },
+    stripe:{
+        private_api_key:'sk_sk3VF1S2GK9kwsa8PfLkQNWfma5pD',
+        public_api_key:'pk_RXEN6DBtQiZeFKULC66vTD2ycP0hJ'
+    }
+}

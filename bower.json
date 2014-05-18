@@ -1,0 +1,9 @@
+{"name": "nde", "version": "1.0.0", "main": "path/to/main.css", "ignore": [".jshintrc", "**/*.txt"], "dependencies": {
+    "jquery": "*",
+    "angular": "*",
+    "ace": "*",
+    "underscore": "*",
+    "angular-route":"*",
+    "angular-cookies":"*",
+    "async": "*"
+}}
