@@ -3,8 +3,8 @@ module.exports = {
     cache_dir: __dirname + '/_test',
     port:3030,
     aws:{
-        accessKeyId:'AKIAIEZU7R2766G7GTMQ',
-        secretAccessKey:'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',
+        accessKeyId:'x',
+        secretAccessKey:'xxxx',
         bucket_name:'byobob',
         associateId:'holiday_helper-20'
     },
