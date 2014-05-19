@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="11db1367-3e0d-4217-af80-7a1818405ffe" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
     </list>
     <ignored path="bg-draw.iws" />
     <ignored path=".idea/workspace.xml" />
